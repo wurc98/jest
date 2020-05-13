@@ -3,8 +3,8 @@
 
 //通用匹配器
 test('测试对象属性',()=>{
-    const a = 1
-    expect(a).toBe(1)
+    const a = 2
+    expect(a).toBe(2)
 })
 
 

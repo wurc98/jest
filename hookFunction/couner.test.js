@@ -29,3 +29,20 @@ test('测试Counter中的reduceOne方法',()=>{
     counter.reduceOne();
     expect(counter.number).toBe(-1)
 })
+
+// console.log hookFunction/couner.test.js:9
+// beforeAll
+// console.log hookFunction/couner.test.js:15
+// beforeEach
+// console.log hookFunction/couner.test.js:22
+// 测试Counter中的addOne方法
+// console.log hookFunction/couner.test.js:19
+// afterEach
+// console.log hookFunction/couner.test.js:15
+// beforeEach
+// console.log hookFunction/couner.test.js:28
+// 测试Counter中的reduceOne方法
+// console.log hookFunction/couner.test.js:19
+// afterEach
+// console.log hookFunction/couner.test.js:12
+// afterAll

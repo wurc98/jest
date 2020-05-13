@@ -13,6 +13,10 @@ test('测试对象属性',()=>{
     const a = { one:1}
     expect(a).toEqual({one:1})
 })
+//toMatchObject 检查对象中是否有某个字段
+
+
+
 
 // 真假值匹配器
 /*

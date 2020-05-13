@@ -25,11 +25,25 @@ import {fetchData,fetchData2 } from './promise'
 // })
 
 
-test("测试异步函数",()=>{
-    return expect(fetchData2()).resolves.toMatchObject({data:{success:true}})
-})
+// test("测试异步函数",()=>{
+//     return expect(fetchData2()).resolves.toMatchObject({data:{success:true}})
+// })
 
 
-test("测试异步函数",()=>{
-    return expect(fetchData2()).rejects.toThrow()
+// test("测试异步函数",()=>{
+//     return expect(fetchData2()).rejects.toThrow()  
+// })
+
+// test("测试异步函数",async ()=>{
+//     await expect(fetchData2()).rejects.toThrow()  
+// })
+
+
+test("测试异步函数",async ()=>{
+    expect.assertions(1)
+    try {
+        await fetchData2()
+    } catch (error) {
+        expect(error.toString()).toEqual("Error: Request failed with status code 404") 
+    }
 })
